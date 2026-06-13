@@ -207,7 +207,7 @@ footer {
 /* every third image has a different style */
 .gallery img:nth-of-type(3n) {
     border-radius: 30px;
-    border-color: #000;
+    border-color: lightblue;
 }
 
 
