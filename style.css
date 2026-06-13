@@ -207,14 +207,14 @@ footer {
 /* every third image has a different style */
 .gallery img:nth-of-type(3n) {
     border-radius: 30px;
-    border-color: lightblue;
+    border-color: green;
 }
 
 
 .gallery img:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 6px 12px rgba(63, 222, 5, 0.5);
 }
 
 /* Styling the header for the gallery pages */
