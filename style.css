@@ -1,0 +1,273 @@
+/*Skip to main content link styling. It moves the link completely off-screen*/
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: top 0.2s ease; 
+}
+
+/* Bring it skip to main content link back into view when a user tabs onto it */
+.skip-link:focus {
+  top: 0;
+}
+
+/* main banner for index.html */
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 20% 50% 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.left_banner {
+    grid-column: 2;
+}
+
+.right_banner {
+    grid-column: 3;
+    background-color: #1e90ff; 
+    font-size: medium;
+    color: white; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 3px solid blue;
+    border-bottom: 3px solid blue;
+
+}
+
+/* styling for the welcome to blackpool logo in main banner */
+.left_banner img {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    border: 3px solid blue;
+}
+
+/* styling for the navigation links in the banner */
+.banner_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.banner_nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.banner_nav a:hover {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid grey;
+}
+
+/* divider between the header and the main body */
+.divider {
+    border: none;
+    height: 5px;
+    background-color: #1e90ff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 71%;
+}
+
+/* style for the main content area */
+#main_content {
+    background-color: #1e90ff;
+    color: white;
+
+    padding: 30px;
+    margin: 40px auto;
+    width: 68%;
+
+    border-radius: 10px; 
+
+    /* stylish top and bottom effect */
+    box-shadow: 
+        0 -5px 0 0 #0b5ed7,  /* top bar */
+        0 5px 0 0 #0b5ed7;   /* bottom bar */
+}
+
+/* style images */
+.img {
+    border: 3px solid white;
+    padding: 5px;
+    margin: 5px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-grow: 1;
+}
+
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.img img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+/* style image labels */
+.img_label {
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    border: 3px solid lightblue;
+    padding: 5px;
+    margin: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.img_label:hover {
+    background-color: lightyellow;
+}
+
+/* style the grid 1x2 for the indexpage */
+.main_grid {
+    display: grid;
+    grid-template-columns: 1fr 40% 40% 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.main_left_grid {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main_right_grid {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+
+    padding: 30px;
+    margin: 40px auto;
+    width: 68%;
+
+    border-radius: 10px; 
+
+    box-shadow: 
+        0 -5px 0 0 #0b5ed7,
+        0 5px 0 0 #0b5ed7;
+}
+
+
+/* Styling forgallery of pictures */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 3px;
+    border: 3px solid white;
+    margin: 3px;
+    transition: ease 0.3s;
+}
+
+/* every third image has a different style */
+.gallery img:nth-of-type(3n) {
+    border-radius: 30px;
+    border-color: #000;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Styling the header for the gallery pages */
+.header {
+    height: 250px;
+
+    /* Image + blue overlay */
+    background:
+        linear-gradient(rgba(30,144,255,0.8), rgba(30,144,255,0.4)),
+        url("images/blackpool5.png");
+
+    background-size: cover;
+    background-position: center;
+
+    /* Text styling */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.header_nav {
+    display: flex;              
+    gap: 10px;                  
+    justify-content: center;    
+    margin-top: 15px;
+}
+
+
+.header_nav a {
+    display: inline-block;
+    transition: 0.3s;
+    background-color: white;
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.header_nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
